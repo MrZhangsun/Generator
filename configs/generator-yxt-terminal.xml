@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <classPathEntry  location="D:\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar"/>
+    <context id="mysql" defaultModelType="hierarchical" targetRuntime="MyBatis3" >
+        <commentGenerator>
+            <property name="suppressDate" value="false"/>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://10.11.1.220:3306/hn_update?characterEncoding=UTF8"
+                        userId="root" password="123">
+        </jdbcConnection>
+        <javaTypeResolver type="org.mybatis.generator.internal.types.JavaTypeResolverDefaultImpl">
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!--entity-->
+        <javaModelGenerator targetPackage="site.zhangsun.yxt.pojo.entity" targetProject="D:\workspace\github\spring-security\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!--xml-->
+        <sqlMapGenerator targetPackage="site.zhangsun.yxt.mapper" targetProject="D:\workspace\github\spring-security\src\main\resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <!--mapper-->
+        <javaClientGenerator targetPackage="site.zhangsun.yxt.mapper" type="XMLMAPPER" targetProject="D:\workspace\github\spring-security\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <table tableName="obd_alarm" domainObjectName="TerminalAlarmEntity"
+               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true" >
+<!--            <property name="useActualColumnNames" value="false"/>-->
+<!--            <generatedKey column="Id" sqlStatement="Mysql" identity="true"/>-->
+        </table>
+        <table tableName="obd_status_info" domainObjectName="TerminalStatusInfoEntity"
+               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true" >
+<!--            <property name="useActualColumnNames" value="false"/>-->
+<!--            <generatedKey column="Id" sqlStatement="Mysql" identity="true"/>-->
+        </table>
+        <table tableName="vehicle_info" domainObjectName="VehicleEntity"
+               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true" >
+        </table>
+    </context>
+
+</generatorConfiguration>
