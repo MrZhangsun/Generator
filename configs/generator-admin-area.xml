@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <classPathEntry  location="E:\repository\maven\mysql\mysql-connector-java\8.0.17\mysql-connector-java-8.0.17.jar"/>
+    <context id="mysql" defaultModelType="hierarchical" targetRuntime="MyBatis3" >
+        <commentGenerator>
+            <property name="suppressDate" value="false"/>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://117.34.109.57:3306/base-admin?characterEncoding=UTF8"
+                        userId="root" password="r2nKSaQ4nixE77E3">
+        </jdbcConnection>
+        <javaTypeResolver type="org.mybatis.generator.internal.types.JavaTypeResolverDefaultImpl">
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!--entity-->
+        <javaModelGenerator targetPackage="com.yxt.admin.server.pojo.entity" targetProject="E:\workspace\idea\office-vehicle-4.0.2\vehicle-admin\admin-server\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <!--xml-->
+        <sqlMapGenerator targetPackage="com.yxt.admin.server.mapper" targetProject="E:\workspace\idea\office-vehicle-4.0.2\vehicle-admin\admin-server\src\main\resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <!--mapper-->
+        <javaClientGenerator targetPackage="com.yxt.admin.server.mapper" type="XMLMAPPER" targetProject="E:\workspace\idea\office-vehicle-4.0.2\vehicle-admin\admin-server\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <table tableName="base_area" domainObjectName="AreaEntity"
+               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true" >
+<!--            <property name="useActualColumnNames" value="false"/>-->
+<!--            <generatedKey column="Id" sqlStatement="Mysql" identity="true"/>-->
+        </table>
+    </context>
+
+</generatorConfiguration>

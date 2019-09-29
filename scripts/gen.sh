@@ -7,3 +7,16 @@ java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-yxt
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-terminal-bind.xml -overwrite
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-yxt-alarm.xml -overwrite
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-yxt-position.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-auth-logger.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-admin-data-range.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-admin-tencat.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-admin-area.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-admin-user.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-admin-depart.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-vehicle.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-insure.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-driver.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-enterprise.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-employee.xml -overwrite
+
+
