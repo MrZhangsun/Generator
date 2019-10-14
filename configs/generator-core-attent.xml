@@ -16,26 +16,20 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!--entity-->
-        <javaModelGenerator targetPackage="com.yxt.core.server.vehicle.pojo.entity" targetProject="E:\workspace\idea\office-vehicle-4.0.2\vehicle-core\core-server\src\main\java">
+        <javaModelGenerator targetPackage="com.yxt.core.server.driver.pojo.entity" targetProject="E:\workspace\idea\office-vehicle-4.0.2\vehicle-core\core-server\src\main\java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!--xml-->
-        <sqlMapGenerator targetPackage="com.yxt.core.server.vehicle.mapper" targetProject="E:\workspace\idea\office-vehicle-4.0.2\vehicle-core\core-server\src\main\resources">
+        <sqlMapGenerator targetPackage="com.yxt.core.server.driver.mapper" targetProject="E:\workspace\idea\office-vehicle-4.0.2\vehicle-core\core-server\src\main\resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!--mapper-->
-        <javaClientGenerator targetPackage="com.yxt.core.server.vehicle.mapper" type="XMLMAPPER" targetProject="E:\workspace\idea\office-vehicle-4.0.2\vehicle-core\core-server\src\main\java">
+        <javaClientGenerator targetPackage="com.yxt.core.server.driver.mapper" type="XMLMAPPER" targetProject="E:\workspace\idea\office-vehicle-4.0.2\vehicle-core\core-server\src\main\java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table tableName="ele_fence" domainObjectName="FenceEntity"
-               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
-               enableSelectByExample="true" selectByExampleQueryId="true" >
-<!--            <property name="useActualColumnNames" value="false"/>-->
-<!--            <generatedKey column="Id" sqlStatement="Mysql" identity="true"/>-->
-        </table>
-        <table tableName="ele_fence_vehicle" domainObjectName="FenceBindEntity"
+        <table tableName="driver_attendance" domainObjectName="AttendanceEntity"
                enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
                enableSelectByExample="true" selectByExampleQueryId="true" >
 <!--            <property name="useActualColumnNames" value="false"/>-->

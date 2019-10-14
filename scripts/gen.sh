@@ -18,5 +18,7 @@ java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-cor
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-driver.xml -overwrite
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-enterprise.xml -overwrite
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-employee.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-attent.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-lease.xml -overwrite
 
 
