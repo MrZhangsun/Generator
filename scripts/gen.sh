@@ -2,11 +2,11 @@ java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator.xml
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-lease-company.xml -overwrite
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-fence.xml -overwrite
 
-java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-yxt-latest.xml -overwrite
-java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-yxt-terminal.xml -overwrite
-java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-terminal-bind.xml -overwrite
-java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-yxt-alarm.xml -overwrite
-java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-yxt-position.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-gis-latest.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-gis-terminal.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-gis-bind.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-gis-alarm.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-gis-position.xml -overwrite
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-auth-logger.xml -overwrite
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-admin-data-range.xml -overwrite
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-admin-tencat.xml -overwrite
