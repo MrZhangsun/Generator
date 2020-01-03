@@ -20,5 +20,10 @@ java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-cor
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-employee.xml -overwrite
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-attent.xml -overwrite
 java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-lease.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-maintenance-company.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-admin-theme.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-plan.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-admin-flow.xml -overwrite
+java -jar ./mybatis-generator-core-1.3.2.jar -configfile ./configs/generator-core-holiday.xml -overwrite
 
 
