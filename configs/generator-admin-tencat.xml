@@ -3,14 +3,15 @@
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
-    <classPathEntry  location="E:\repository\maven\mysql\mysql-connector-java\8.0.17\mysql-connector-java-8.0.17.jar"/>
+    <classPathEntry  location="E:\repository\mysql\mysql-connector-java\8.0.15\mysql-connector-java-8.0.15.jar"/>
     <context id="mysql" defaultModelType="hierarchical" targetRuntime="MyBatis3" >
         <commentGenerator>
             <property name="suppressDate" value="false"/>
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
-        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://117.34.109.57:3306/base-admin?characterEncoding=UTF8"
-                        userId="root" password="r2nKSaQ4nixE77E3">
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://117.34.95.31:3366/base-admin?useUnicode=true"
+                        userId="root" password="Xbg5lzNcRnObwvdS">
+            <property name="useInformationSchema" value="true"/>
         </jdbcConnection>
         <javaTypeResolver type="org.mybatis.generator.internal.types.JavaTypeResolverDefaultImpl">
             <property name="forceBigDecimals" value="false"/>

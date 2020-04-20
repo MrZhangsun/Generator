@@ -36,6 +36,18 @@
 <!--            <property name="useActualColumnNames" value="false"/>-->
 <!--            <generatedKey column="Id" sqlStatement="Mysql" identity="true"/>-->
         </table>
+        <table tableName="obd_info" domainObjectName="TerminalEntity"
+               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true" >
+<!--            <property name="useActualColumnNames" value="false"/>-->
+<!--            <generatedKey column="Id" sqlStatement="Mysql" identity="true"/>-->
+        </table>
+        <table tableName="obd_vehicle_bind" domainObjectName="TerminalBindVehicleEntity"
+               enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true" >
+<!--            <property name="useActualColumnNames" value="false"/>-->
+<!--            <generatedKey column="Id" sqlStatement="Mysql" identity="true"/>-->
+        </table>
     </context>
 
 </generatorConfiguration>
